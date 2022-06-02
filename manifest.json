@@ -1,0 +1,22 @@
+{
+    "manifest_version": 2,
+    "name": "Focus Time",
+    "version": "1.0",
+    "description": "Block out distractions, to help you focus.",
+    "icons": {
+        "48": "icons/icn-48.png",
+        "96": "icons/icn-96.png"
+    },
+    "content_scripts": [{
+        "matches": ["<all_urls>"],
+        "js": ["content_scripts/norp.js"]
+    }],
+    "browser_action": {
+        "default_icon": "icons/icn-32.png",
+        "default_title": "Focus Time",
+        "default_popup": "popup/page.html"
+    },
+    "permissions": [
+        "<all_urls>"
+    ]
+}
