@@ -5,7 +5,11 @@
         <link rel="stylesheet" href="page.css">
     </head>
     <body>
-        <button class="btn btn-norp">Norp</button>
-        <script src="page.js"></script>
+        <button class="btn btn-enable"></button>
+        <form class="add-site-frm">
+            <input class="add-site-input" type="text" pattern=".*:\/\/.*" required>
+            <button class="btn add-site-submit" type="submit">Add</button>
+        </form>
+        <script src="page.js" defer></script>
     </body>
 </html>
